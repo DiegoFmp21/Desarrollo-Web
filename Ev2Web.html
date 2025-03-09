@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería Matehuala</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightsteelblue;  
+        }
+        h1, h4 {
+            color: black;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            background-color: #333333;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(160, 193, 243);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        section#productos {
+            background-color: #fcbef1;
+        }
+
+        .box form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box input, .box textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        .box input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .box input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <h1>Bienvenidos a la Papelería Matehuala</h1>
+        <h4>Mucho gusto, nosotros somos una papelería regiomontana.</h4>
+        <img src="http://placekittens.com/200/200" alt="Imagen de la papelería">
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+        <h2>Nuestros productos</h2>
+        
+        <ul>
+            <li><p>Papel China</p></li>
+            <li><p>Colores Barrilito</p></li>
+            <li><p>Marcadores de agua</p></li>
+        </ul>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h1>Contactanos</h1>
+        <div class="box">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <img src="http://placekittens.com/500/500" alt="Imagen de contacto">
+    </section>
+
+</body>
+</html>
